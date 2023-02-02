@@ -1,10 +1,13 @@
 <template>
     <lightning-card title="Person Details">
         <div style="width:640px ">
-            <p class="slds-p-around_medium" onclick="updateUser()">
+            <p class="slds-p-around_medium">
                
             </p>
-            Hello {user.firstName} {user.lastName}
+            <lightning-button variant='base' label='label here..' title='title here' onclick={updateUser} class='cssClass'>
+                {user.firstName} {user.lastName}
+            </lightning-button>
+            ligh
         </div>
     </lightning-card>
 </template>
