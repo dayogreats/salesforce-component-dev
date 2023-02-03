@@ -12,5 +12,5 @@ export default class Person extends LightningElement {
             firstName: 'Raven',
             lastName: 'Jones'
         }
-    };
+    }
 }
