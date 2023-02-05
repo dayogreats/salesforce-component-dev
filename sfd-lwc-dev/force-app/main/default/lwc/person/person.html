@@ -4,13 +4,20 @@
             <p class="slds-p-around_medium">
                 {user.firstName} {user.lastName}
             </p>
-            <lightning-button   variant='base' 
+            <lightning-button   variant='primary' 
                                 slot="actions"
-                                label='Update User' 
                                 title='Update User' 
                                 onclick={updateUser} 
-                                class='cssClass'>
+                                >
             </lightning-button>
+
+            <lightning-formatted-name >{user.firstName}</lightning-formatted-name>
+            <!-- <div>
+                <input type="text" name="{user.lastName} >
+            </div> -->
+
+            <lightning-input-field field-name='firstName' > First Namee:
+            </lightning-input-field>
             
         </div>
     </lightning-card>
