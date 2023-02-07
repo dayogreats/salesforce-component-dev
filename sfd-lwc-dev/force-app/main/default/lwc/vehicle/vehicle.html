@@ -1,7 +1,6 @@
 <template>
-    <lightning-card label="Vehicle form">
     <template if:true={show}>
-        <lightning-card>
+        <lightning-card title="Vehicle form">
           <lightning-input
             type="text"
             label="Make"
@@ -18,31 +17,31 @@
             value={model}
           >
           </lightning-input>
+
           <lightning-input
             type="number"
             label="Year"
+            min="2"
+            max="4"
             onchange={yearOnChange}
-            placeholder="Enter year"
-            value={amount}
+            value={year}
           >
           </lightning-input>
           <lightning-input
             type="color"
             label="Color"
             onchange={colorOnChange}
-            placeholder="Choose a color"
             value={color}
           >
           </lightning-input>
         </lightning-card>
       </template>
-    </lightning-card>
 
-    <lightning-card label="Vehicle Information">
+    <lightning-card title="Vehicle Information">
     <template if:false={show}>
         <h4>Vehicle Make: <span>{make}</span></h4>
         <h4>Vehicle Model: <span>{model}</span></h4>
-        <h4>Vehicle year: <span>{year}</span></h4>
+        <h4>Vehicle Year: <span>{year}</span></h4>
         <h4>Vehicle Color: <span>{color}</span></h4>
     </template>
 </lightning-card>

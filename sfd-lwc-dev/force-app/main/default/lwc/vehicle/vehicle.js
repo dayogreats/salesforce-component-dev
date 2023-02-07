@@ -21,7 +21,7 @@ export default class Bidder extends LightningElement {
         this.brand= e.target.value
     }
 
-    amountOnChange(e){
+    yearOnChange(e){
         this.year= e.target.value
     }
 
