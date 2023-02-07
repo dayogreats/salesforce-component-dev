@@ -1,12 +1,7 @@
 import { LightningElement,  track } from 'lwc';
 
 export default class Bidder extends LightningElement {
-    @track 
-    color= "red";
-    name="";
-    tag = 101;
-    amount = 0.0;
-    
+    @track name; tag; amount; color= "red";
     
     handleOnChange(e){
         this.primaryColor= e.target.value

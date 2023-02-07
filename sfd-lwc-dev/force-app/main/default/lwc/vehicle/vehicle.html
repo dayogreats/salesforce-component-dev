@@ -1,0 +1,44 @@
+<template>
+    <template if:true={show}>
+        <lightning-card>
+          <lightning-input
+            type="text"
+            label="Make"
+            onchange={makeOnChange}
+            placeholder="Vehicle make"
+            value={make}
+          >
+          </lightning-input>
+          <lightning-input
+            type="text"
+            label="Model"
+            onchange={modelOnChange}
+            placeholder="Vehicle model"
+            value={model}
+          >
+          </lightning-input>
+          <lightning-input
+            type="number"
+            label="Year"
+            onchange={yearOnChange}
+            placeholder="Enter year"
+            value={amount}
+          >
+          </lightning-input>
+          <lightning-input
+            type="color"
+            label="Color"
+            onchange={colorOnChange}
+            placeholder="Choose a color"
+            value={color}
+          >
+          </lightning-input>
+        </lightning-card>
+      </template>
+      
+    <template if:false={show}>
+
+        
+
+    </template>
+</template>
