@@ -1,6 +1,42 @@
 <template>
-    <div class="bid">
-        <h3>Bidder</h3>
+  <lightning-input
+    type="color"
+    label="Color Piker"
+    onchange={handleOnChange}
+    value={color}
+  ></lightning-input>
+
+  <lightning-card>
+    <div class="slds-m-around_medium">
+      <p>Bidder Name: {name}</p>
+      <p>Bidder Age: {tag}</p>
+      <p>Bid Amount: {salary}</p>
     </div>
-    
+    <lightning-input
+      type="text"
+      label="Bidder's Name"
+      onchange={nameOnChange}
+      placeholder="Enter a name: e.g 'John'"
+      value={name}
+    >
+    </lightning-input>
+    <lightning-input
+      type="number"
+      label="Bidder's Tag"
+      onchange={tagOnChange}
+      placeholder="Enter your bider's tag number"
+      value={tag}
+    >
+    </lightning-input>
+    <lightning-input
+      type="number"
+      min="0.01"
+      step="0.5"
+      label="Bid Amount"
+      onchange={amountOnChange}
+      placeholder="Enter bid amount"
+      value={amount}
+    >
+    </lightning-input>
+  </lightning-card>
 </template>
