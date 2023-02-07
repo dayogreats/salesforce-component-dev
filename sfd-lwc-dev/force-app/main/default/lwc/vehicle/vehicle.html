@@ -1,4 +1,5 @@
 <template>
+    <lightning-card label="Vehicle form">
     <template if:true={show}>
         <lightning-card>
           <lightning-input
@@ -35,10 +36,14 @@
           </lightning-input>
         </lightning-card>
       </template>
-      
+    </lightning-card>
+
+    <lightning-card label="Vehicle Information">
     <template if:false={show}>
-
-        
-
+        <h4>Vehicle Make: <span>{make}</span></h4>
+        <h4>Vehicle Model: <span>{model}</span></h4>
+        <h4>Vehicle year: <span>{year}</span></h4>
+        <h4>Vehicle Color: <span>{color}</span></h4>
     </template>
+</lightning-card>
 </template>
