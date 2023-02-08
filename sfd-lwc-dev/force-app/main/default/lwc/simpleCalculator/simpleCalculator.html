@@ -1,0 +1,46 @@
+<template>
+  <lightning-layout multiple-rows="" title="Simple Interest Calculator">
+    <lightning-layout-item size="12">
+      <lightning-input
+        type="number"
+        label="Enter principal: "
+        onchange={principalOnChange}
+      >
+      </lightning-input>
+    </lightning-layout-item>
+
+    <lightning-layout-item size="12">
+      <lightning-input
+        type="number"
+        label="Enter year: "
+        onchange={yearOnChange}
+      >
+      </lightning-input>
+    </lightning-layout-item>
+
+    <lightning-layout-item size="12">
+      <lightning-input
+        type="number"
+        label="Enter rate: "
+        onchange={rateOnChange}
+      >
+      </lightning-input>
+    </lightning-layout-item>
+    <lightning-layout-item size="12">
+      <lightning-button
+        type="Submit"
+        label="Calculate"
+        onclick={calculateSimple}
+      >
+      </lightning-button>
+    </lightning-layout-item>
+
+    <lightning-layout-item
+      size="12"
+    >
+      <lightning-formatted-text
+        value={currentOutput}
+      ></lightning-formatted-text>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>
