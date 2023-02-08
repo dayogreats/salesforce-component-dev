@@ -14,8 +14,26 @@
             name="durl" 
             type="String" 
             default="Data url from json placeholder"
+            label="Enter a title"
+            />
+            <property 
+            name="imgurl" 
+            type="String" 
+            default="change the image here"
             label="Enter a url"
             />
+            <property 
+            name="isShow" 
+            type="Boolean" 
+            default="true"
+            label="Enter a url"
+            />
+        </targetConfig>
+        <targetConfig targets="lightning__RecordPage">
+            <objects>
+                <object>Account</object>
+                <object>Opportunity</object>
+            </objects>
         </targetConfig>
     </targetConfigs>
 

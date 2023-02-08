@@ -25,11 +25,12 @@
   </template> --> 
 
 
-  <template>
-    <lightning-card icon-name='car' alternative-text='alternativeText' title='title'>
+  <template >
+    <template if:true={isShow}>
+    <lightning-card icon-name='car' alternative-text='alternativeText' title={durl}>
 
           <div class="card">
-            <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+            <img src={imgurl} alt="John" style="width:100%">
             <h1>John Doe</h1>
             <p class="title">CEO & Founder, Example</p>
             <p>Harvard University</p>
@@ -40,4 +41,6 @@
             <p><button>Contact</button></p>
           </div>
     </lightning-card>
+  </template>
+
   </template>

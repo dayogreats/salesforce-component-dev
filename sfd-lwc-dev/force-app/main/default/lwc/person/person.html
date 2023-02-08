@@ -1,24 +1,23 @@
 <template>
-    <lightning-card title="Person Details">
-        <div style="width:640px ">
-            <p class="slds-p-around_medium">
-                {user.firstName} {user.lastName}
-            </p>
-            <lightning-button   variant='primary' 
-                                slot="actions"
-                                title='Update User' 
-                                onclick={updateUser} 
-                                >
-            </lightning-button>
+  <lightning-card title={title} >
+    <p>i am {firstName} and {lastName}</p>
+    <div style="width: 640px">
+      <p class="slds-p-around_medium">{user.firstName} {user.lastName}</p>
 
-            <lightning-formatted-name >{user.firstName}</lightning-formatted-name>
-            <!-- <div>
-                <input type="text" name="{user.lastName} >
-            </div> -->
+      <lightning-formatted-name>{user.firstName}</lightning-formatted-name>
 
-            <lightning-input-field field-name='firstName' > First Namee:
-            </lightning-input-field>
-            
-        </div>
-    </lightning-card>
+      <lightning-input-field field-name="firstName">
+        First Name:
+      </lightning-input-field>
+
+      <lightning-button
+        variant="primary"
+        slot="actions"
+        title="Update User"
+        onclick={updateUser}
+        label="Update Name"
+      >
+      </lightning-button>
+    </div>
+  </lightning-card>
 </template>

@@ -1,7 +1,9 @@
 import { api, LightningElement, track  } from 'lwc';
 
 export default class Fetcha extends LightningElement {
-    @api req =  this.data.url;
+    @api durl = 'Image Profile'
+    @api imgurl = "https://www.w3schools.com/w3images/team2.jpg"
+    @api isShow = false
 
 
     @track data;

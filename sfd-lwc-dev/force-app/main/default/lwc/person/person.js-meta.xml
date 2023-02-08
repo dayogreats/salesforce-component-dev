@@ -11,20 +11,38 @@
 
     <targetConfigs>
         <targetConfig targets="lightning__AppPage, lightning__HomePage">
+            
+    
+            <property 
+            name="title" 
+            type="String" 
+            default="Change the title here"
+            label="Enter title here"
+            />
+
             <property 
             name="firstName" 
             type="String" 
-            default="Data from json placeholder"
-            label="Enter firstname"
+            default="Change the title here"
+            label="Change the firstname here "
             />
-    
+
             <property 
             name="lastName" 
             type="String" 
-            default="Data from json placeholder"
-            label="Enter firstname"
+            default="Change the title here"
+            label="Change the lastname here"
             />
         </targetConfig>
+
+        <targetConfig targets="lightning__RecordPage">
+          <property name="title" type="String" />
+          <objects>
+              <object>Account</object>
+              <object>Opportunity</object>
+          </objects>
+      </targetConfig>
+        
     </targetConfigs>
 
 </LightningComponentBundle>
